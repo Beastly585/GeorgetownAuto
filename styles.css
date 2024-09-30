@@ -1,0 +1,406 @@
+@viewport {
+  width: device-width;
+  zoom: 1;
+}
+
+html {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+head {
+  margin: 0;
+  padding: 0;
+  background-color: #ebe7e0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ebe7e0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+.contact-button {
+  position: fixed;
+  top: 50;
+  right: 0;
+  z-index: 1000;
+  height: fit-content;
+  width: fit-content;
+  background-color: rgb(152, 10, 10);
+  border-radius: 2%;
+}
+
+.contact-button button {
+  color: white;
+  font-size: 1.2em;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  background-color: rgb(152, 10, 10);
+  padding: 15px;
+}
+
+.contact-button button:hover {
+  cursor: pointer;
+}
+
+/* HEADER HOME  */
+.header-home {
+  height: 60vh;
+  width: 100vw;
+  padding: 20px;
+  position: relative;
+  top: 0;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-areas: "nav-left nav-center nav-right";
+  align-items: top;
+  background-image: url("./imgs/DC-Cap-Hill-Night-HD.jpg");
+  background-position: top;
+  background-size: 100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+/* HEADER STANDARD */
+
+.header {
+  height: 7vh;
+  width: 90vw;
+  padding: 10px 5vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgb(28, 52, 138);
+  gap: 20px;
+  margin-bottom: 4vh;
+  margin-bottom: 10%;
+}
+
+
+.nav {
+  top: 0;
+  height: 100%;
+  display: flex;
+  flex: auto;
+  margin: 0 auto;
+  padding: 0;
+  width: 20%;
+}
+
+.navbar {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar a{
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  border: solid 1px white;
+}
+
+.navbar a:hover {
+  background-color: blue;
+}
+
+.logo-center {
+  width: 40%;
+}
+
+.logo-center img{
+  margin-top: 20%;
+  align-self: bottom;
+  width: 200%;
+  height: 300%;
+  object-fit: contain;
+  margin-right: auto;
+  margin-left: 50%;
+  transform: translateX(-60%);
+
+  -webkit-filter: drop-shadow(2px 1px 0 rgb(228, 227, 210))
+                  drop-shadow(-1px -1px 0 rgb(228, 227, 210));
+  filter: drop-shadow(2px 1px 0 rgb(228, 227, 210)) 
+          drop-shadow(-1px -1px 0 rgb(228, 227, 210));
+}
+
+.call-us {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.call-us .phone-icon {
+  color: white;
+  margin-bottom: 5px;
+}
+
+.phone-icon:hover {
+  cursor: pointer;
+}
+
+.numbers {
+  display: none;
+}
+
+.call-us:hover .numbers{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.numbers div {
+  background-color: rgb(171, 12, 41);
+  border-radius: 10px;
+  width: 25%;
+  padding: 5px 20px;
+  text-align: center;
+  border: solid 1px white;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.numbers div a {
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+
+
+/* WHAT WE OFFER CAR SECTION STYLING - WW0-CONTENT */
+
+.wwo-content {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/* -----------------------------CARS WE SERVICE-------------------------- */
+
+.cars-title {
+  width: 80%;
+  color: white;
+  background-color: rgb(171, 12, 41);
+  font-size: 3em;
+  font-weight: 500;
+  text-align: center;
+  padding: 10px 0;
+}
+
+
+.car-types {
+  margin-top: 1vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+  align-items: top;
+}
+
+.car-sub {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 5px;
+}
+
+.car-title {
+  background-color: rgb(156, 4, 4);
+  color: white;
+  width: 100%;
+  font-size: 2em;
+  font-weight: 500;
+  text-align: center;
+  padding: 2% 0;
+}
+
+.car-type-sub {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+.car-type-sub2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.nation-title {
+  width: 100%;
+  background-color: rgb(21, 1, 107);
+  color: white;
+  font-size: 1.8em;
+  text-align: center;
+  display: none;
+}
+
+.nation-details {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.flag {
+  width: 20%;
+  height: 100%;
+  background-image: url(./imgs/japan-flag.jpg);
+  background-position: center;
+  background-size: cover;
+  object-fit: fill;
+  background-repeat: no-repeat;
+  border: solid 2px white;
+}
+
+.korea-flag {
+  background-image: url(./imgs/korea-flag.jpg);
+}
+
+.germany-flag {
+  background-image: url(./imgs/germany-flag.jpg);
+}
+
+.sweden-flag {
+  background-image: url(./imgs/sweden-flag.jpg);
+}
+
+.england-flag {
+  background-image: url(./imgs/england-flag.jpg);
+}
+
+.italy-flag {
+  background-image: url(./imgs/italy-flag.jpg);
+}
+
+.america-flag {
+  background-image: url(./imgs/america-flag.jpg);
+}
+
+
+.car-subdivision {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 25vh;
+  gap: 5px;
+}
+
+.germany {
+  max-height: 20vh;
+}
+
+.england {
+  max-height: 18vh;
+}
+
+
+.car-subdivision div {
+  padding: 7px 0;
+  font-size: 1em;
+  background-color: white;
+  text-align: center;
+}
+
+.car-subdivision div:hover {
+  box-shadow: 0px 0px 1px 1px rgba(194, 194, 194, 0.52);
+}
+
+
+/* ---------------------SERVICES STYLING------------------------ */
+
+
+
+footer {
+  position: relative;
+  width: 100%;
+  border-top: 5px solid black;
+  bottom: 0;
+  height: 50px;
+  align-items: center;
+  background-color: rgb(100,100,100);
+}
+
+.tags {
+  font-size: 1em;
+  height: 50%;
+  padding: 10px;
+  float: right;
+}
+
+
+
+
+@media only screen
+and (max-device-width: 666px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+  html {
+      height: 150%;
+      width: fit content;
+  }
+  
+  head, body {
+      height: 50%;
+  }
+  
+  .header {
+      height: 50%;
+  }
+  
+  .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+  }
+  
+  .logo {
+      width: 50%;
+      padding: 0;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .numbers {
+      position: center;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .numbers ul {
+      display: block;
+      margin: 0;
+      padding: 0;
+  }
+  
+  .numbers li {
+      margin: 0;
+      padding: 10px;
+      font-size: 2em;
+      font-family: "Fira Sans", "Playfair Display", Arial;
+  }
+
+}
