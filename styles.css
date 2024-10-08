@@ -208,13 +208,14 @@ body {
   margin-top: 1vh;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 2vw;
   align-items: top;
 }
 
 .car-sub {
-  width: 25%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -235,8 +236,8 @@ body {
 .car-type-sub {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: space-around;
   flex-wrap: nowrap;
   gap: 10px;
 }
@@ -302,7 +303,7 @@ body {
 .car-subdivision {
   width: 80%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   max-height: 25vh;
   gap: 5px;
